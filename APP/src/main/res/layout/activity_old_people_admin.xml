@@ -1,0 +1,190 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmanadmin_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/oldmanadmin_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <TextView
+                    android:id="@+id/oldmanadminback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="37dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/back"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="老人管理"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/oldadmin_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldmanadmin_title"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/jibenxinx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_one"
+                    android:gravity="center"
+                    android:text="基本信息"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/jiashuxinxi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_two"
+                    android:gravity="center"
+                    android:text="家属信息"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/jiankangxinxi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_three"
+                    android:gravity="center"
+                    android:text="病例记录"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldadmin_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldadmin_layout1"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tizhengshuju"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_four"
+                    android:gravity="center"
+                    android:text="体征数据"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hulijihua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_five"
+                    android:gravity="center"
+                    android:text="护理计划"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/canyinjihua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_six"
+                    android:gravity="center"
+                    android:text="餐饮计划"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldadmin_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldadmin_layout2"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/outadmin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_seven"
+                    android:gravity="center"
+                    android:text="外出管理"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shigujilu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_night"
+                    android:gravity="center"
+                    android:text="事故记录"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xiaofeijilu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/old_nine"
+                    android:gravity="center"
+                    android:text="消费记录"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

@@ -1,0 +1,76 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmanlist_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/oldmanlist_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/oldmanlistback_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/default_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="老人列表"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/oldmanlist_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="亲!暂时还没数据哟.."
+                android:textColor="#cccccc"
+                android:visibility="gone" />
+
+            <SearchView
+                android:id="@+id/oldmanlist_searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldmanlist_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="请输入老人姓名"></SearchView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/oldmanlist_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/oldmanlist_searchView"
+                android:layout_marginTop="10dp"
+                android:background="#fafafa"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

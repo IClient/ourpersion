@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nurseadmin_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#1874CD">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/nurseadminback_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/default_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="护理项目"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/nurseadmin_datepicker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@null"
+                    android:src="@mipmap/research" />
+            </RelativeLayout>
+
+
+            <SearchView
+                android:id="@+id/nurseadmin_searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="请输入老人姓名"></SearchView>
+
+            <ExpandableListView
+                android:id="@+id/nurseadmin_explistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"></ExpandableListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstmain_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <RelativeLayout
+                android:id="@+id/firstmainactivity_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#1874CD">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/firstmainactivity_back_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/default_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:text="护理首页"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/firstmain_remessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/firstmainactivity_toolbar"
+                android:background="#000000"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/firstmain_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@mipmap/messagesend"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" />
+
+                <ImageButton
+                    android:id="@+id/firstmain_message_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/main_exiticon"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/oldadmin_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstmain_remessage"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/jihuajizhixing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/firstmain_plan"
+                    android:gravity="center"
+                    android:text="计划及执行"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/gerenpaiban"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/firstmain_work"
+                    android:gravity="center"
+                    android:text="个人排班"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/qingjiajilu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/firstmain_qij"
+                    android:gravity="center"
+                    android:text="请假记录"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldadmin_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldadmin_layout1"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/gerenzhongxin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/firstmain_me"
+                    android:gravity="center"
+                    android:text="个人中心"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/laorenlieb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/firstmain_oldman"
+                    android:gravity="center"
+                    android:text="区域老人"
+                    android:textColor="#595959"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

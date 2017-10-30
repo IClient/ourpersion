@@ -1,0 +1,161 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmannurseproject_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/oldmannurseproject_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <TextView
+                    android:id="@+id/oldmannurseprojectback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="37dp"
+                    android:drawableLeft="@mipmap/back"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="护理计划"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/oldmannurseproject_datepicker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@null"
+                    android:src="@mipmap/research" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/oldmannurseproject_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/oldmannurseproject_title"
+                android:background="@mipmap/oldmanfamily_bk"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/oldman_nurseproject_image"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/oldone" />
+
+                <TextView
+                    android:id="@+id/oldman_nurseproject_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/oldman_nurseproject_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="男"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/oldman_nurseproject_time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/oldmannurseproject_layout"
+                android:layout_marginTop="10dp"
+                android:background="#0fcccccc"
+                android:gravity="center"
+                android:text="护理计划：2017-09-18"
+                android:textColor="#1874CD" />
+
+            <TextView
+                android:id="@+id/oldman_nurseproject_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="亲!暂时还没数据哟.."
+                android:textColor="#cccccc"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/oldmannurse_layout_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldman_nurseproject_time"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="时间"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="项目"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="项目类型"
+                    android:textColor="#000000" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/oldman_nurse_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldmannurse_layout_t"
+                android:background="#fafafa"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

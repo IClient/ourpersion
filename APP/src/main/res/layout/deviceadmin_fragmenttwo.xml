@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" android:layout_alignParentTop="true"
+        android:background="#1874CD">
+
+        <com.example.administrator.OurPersion.SelfView.CircleImageView
+            android:id="@+id/deviceadmin2back_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/default_image"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:text="配对设备"
+            android:textColor="#cccccc"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/deviceadminfragment2_serachview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入搜索内容"></SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/deviceadmin_recyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

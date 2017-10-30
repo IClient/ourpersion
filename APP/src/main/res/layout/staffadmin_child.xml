@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/staffadmin_child_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/staffadmin_child_t"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="亲！暂时无排班..." />
+</LinearLayout>

@@ -1,0 +1,376 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmanadminbasemessage_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/oldmanadminbasemessage_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <TextView
+                    android:id="@+id/oldmanadminbasemessageback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="37dp"
+                    android:drawableLeft="@mipmap/back"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="老人资料"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/basemessage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/oldmanadminbasemessage_title"
+                android:background="@mipmap/oldmanfamily_bk"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/oldman_basemessage_image"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/oldmanadminbasemessage_title"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/oldone" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="#323232"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="男"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/basemessage_layout"
+                android:background="#fafafa"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="13608046093"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_phone"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view1"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="生日"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="2014/08/21"
+                    android:textColor="#323232"
+
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_birthday"
+                android:background="#cfcfcf"></View>
+
+
+            <LinearLayout
+                android:id="@+id/linear_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view2"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="成都市青羊区日月大道和思康健"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_address"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view3"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入住状态"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="入住登记中"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_state"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_enterposition"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view4"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="床位位置"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="入住登记中"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_enterposition"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_entertime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view5"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入住时间"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_entertime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="2017/08/02"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_entertime"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_daoqitime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view6"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到期时间"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_daoqitime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="2017/08/02"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/basemessage_view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_daoqitime"
+                android:background="#cfcfcf"></View>
+
+            <LinearLayout
+                android:id="@+id/linear_yuefeitime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/basemessage_view7"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月费"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/oldman_basemessage_yuefeitime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="2017/08/02"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/linear_yuefeitime"
+                android:background="#cfcfcf"></View>
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0fcccccc">
+
+    <LinearLayout
+        android:id="@+id/menu_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/menu_logo"
+        android:orientation="horizontal">
+
+        <com.example.administrator.OurPersion.SelfView.CircleImageView
+            android:id="@+id/menu_circleimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="赵四"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_framelayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bedadmin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@mipmap/bedadmin"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:text="床位查询"
+            android:textColor="#9f8b7d"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/nurseadmin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@mipmap/nurseadmin"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:text="护理项目"
+            android:textColor="#9f8b7d"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/oldmanadmin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@mipmap/oldmanadmin"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:text="老人列表"
+            android:textColor="#9f8b7d"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/staffadmin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@mipmap/staffadmin"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:text="员工排班"
+            android:textColor="#9f8b7d"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <Button
+            android:id="@+id/messagesend_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@mipmap/messagesend"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:text="消息记录"
+            android:textColor="#9f8b7d"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+        <!--<Button-->
+        <!--android:id="@+id/persion_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:clickable="false"-->
+        <!--android:drawableLeft="@mipmap/persion"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="个人中心"-->
+        <!--android:textColor="#9f8b7d"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal" />-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/deviceadmin_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:clickable="false"-->
+        <!--android:drawableLeft="@mipmap/deviceadmin"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="设备管理"-->
+        <!--android:textColor="#9f8b7d"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/formsadmin_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:clickable="false"-->
+        <!--android:drawableLeft="@mipmap/formsadmin"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="报表管理"-->
+        <!--android:textColor="#9f8b7d"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/warnsystem_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:clickable="false"-->
+        <!--android:drawableLeft="@mipmap/warning_system"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="报警系统"-->
+        <!--android:textColor="#9f8b7d"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal" />-->
+    </LinearLayout>
+
+</RelativeLayout>

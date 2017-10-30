@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="选     择"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F8FF" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:text="从相册中获取"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#F0F8FF" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:text="拍       照 "
+        android:textColor="#6699ff"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F0F8FF" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:text="取    消"
+        android:textColor="#ff0000"
+        android:textSize="18sp" />
+
+</LinearLayout>

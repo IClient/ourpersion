@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <RelativeLayout
+                android:id="@+id/mainactivity_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#1874CD">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/mainactivityback_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/default_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:text="计划及执行"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <ExpandableListView
+                android:id="@+id/firstmainplan_expanablelistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/mainactivity_toolbar"
+                android:groupIndicator="@null"
+                android:paddingTop="10dp"
+                android:scrollbars="none"></ExpandableListView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

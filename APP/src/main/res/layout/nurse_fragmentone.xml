@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#1874CD">
+
+        <com.example.administrator.OurPersion.SelfView.CircleImageView
+            android:id="@+id/nursefragment1back_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/default_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:text="护理项目"
+            android:textColor="#cccccc"
+            android:textSize="18sp" />
+
+        <ImageButton
+
+            android:id="@+id/nursefragment1_addicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="37dp"
+            android:background="@null"
+            android:src="@mipmap/more" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nursefragment1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="正在刷新..."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <SearchView
+        android:id="@+id/nurse_searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入搜索内容"></SearchView>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/nursefragment1_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nursefragment1_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

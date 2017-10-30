@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/staffadmin_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/staffadmin_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#1874CD">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/staffadminctivityback_menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@mipmap/default_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:text="员工排班"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/staffadminctivityback_addaction"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@null"
+                    android:src="@mipmap/more" />
+
+            </RelativeLayout>
+
+            <com.example.administrator.OurPersion.SelfView.BedMyHorizontalScrollView
+                android:id="@+id/staffadmin_horizonscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/staffadmin_title"
+                android:background="#fafafa"
+                android:scrollbars="none"></com.example.administrator.OurPersion.SelfView.BedMyHorizontalScrollView>
+
+            <ExpandableListView
+                android:id="@+id/staffadmin_activity_expandbale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/staffadmin_horizonscrollview"
+                android:layout_marginTop="5dp"
+                android:divider="#ffffff"
+                android:dividerHeight="20dp"
+                android:groupIndicator="@null"
+                android:scrollbars="none"></ExpandableListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

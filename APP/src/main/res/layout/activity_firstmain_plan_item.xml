@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <TextView
+            android:id="@+id/frgamentone_item_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="9:00-10:00" />
+
+        <TextView
+            android:id="@+id/frgamentone_item_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="入浴" />
+
+        <TextView
+            android:id="@+id/frgamentone_item_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="类型" />
+
+
+        <ImageButton
+            android:id="@+id/main_frgament_item_del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+
+            android:src="@mipmap/delete"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/frgamentone_item_time"
+        android:layout_marginTop="10dp"
+        android:background="#0fcccccc" />
+</LinearLayout>

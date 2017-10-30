@@ -1,0 +1,104 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmanafamilymessage_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/oldmanafamilymessage_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <TextView
+                    android:id="@+id/oldmanfamilymessageback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="37dp"
+                    android:drawableLeft="@mipmap/back"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="家属信息"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/oldmanfamily_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/oldmanafamilymessage_title"
+                android:background="@mipmap/oldmanfamily_bk"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/oldman_family_image"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/oldone" />
+
+                <TextView
+                    android:id="@+id/oldman_family_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/oldman_family_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="男"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/oldmanfamily_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oldmanfamily_layout"
+                android:background="#fafafa"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/oldmanfamily_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="此老人暂无家属信息！"
+                android:textColor="#cccccc"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

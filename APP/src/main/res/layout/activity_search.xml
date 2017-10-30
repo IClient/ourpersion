@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/serach_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <Button
+                    android:id="@+id/searchback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/back"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/search_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="床位搜索"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <SearchView
+                android:id="@+id/bedadmin_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/serach_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="请输入床位编号"></SearchView>
+
+            <TextView
+                android:id="@+id/chuangwei_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/bedadmin_search"
+                android:background="#fafafa"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:text="床位信息"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/chuangwei_linear"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/chuangwei_text">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/search_bedmessage_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                    android:src="@mipmap/search_bedmessage_kongxian" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="床位编号"
+                        android:textColor="#cccccc"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/search_bedno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="123456789"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="床位价格"
+                        android:textColor="#cccccc"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/search_bedprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="￥1000/月"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bed_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/chuangwei_linear"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bed_view"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bed_view"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房间类型"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/searchview_roomtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:text="单人间"
+                        android:textColor="#323232"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bed_view"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/bed_view"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="床位类型"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/searchview_bedtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:text="单人间"
+                            android:textColor="#323232"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bed_view"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="床位位置"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/serachview_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:text="一单元四楼401室2号床"
+                        android:textColor="#323232"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/bed_view"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="床位状态"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/searchview_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center_vertical"
+                        android:text="已入住"
+                        android:textColor="#323232"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"></View>
+
+                <LinearLayout
+                    android:id="@+id/searchview_oldmanlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/bed_oldman_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#fafafa"
+                        android:gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="老人信息"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/search_oldmanrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <com.example.administrator.OurPersion.SelfView.CircleImageView
+                            android:id="@+id/bed_oldman_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="15dp"
+                            android:src="@mipmap/oldone" />
+
+                        <LinearLayout
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/bed_oldman_image"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="姓名"
+                                android:textColor="#cccccc"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/bedoldman_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="张女士"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="40dp"
+                            android:layout_toRightOf="@id/name"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="性别"
+                                android:textColor="#cccccc"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/bedoldman_sex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="女"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="年龄"
+                                android:textColor="#cccccc"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/bedoldman_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="68岁"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#cccccc"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="入住时间"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/bedoldman_entertime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:text="2015-12-08 14:31"
+                            android:textColor="#323232"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#cccccc"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="入住天数"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/bedolman_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center_vertical"
+                            android:text="688天"
+                            android:textColor="#323232"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#cccccc"></View>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

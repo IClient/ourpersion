@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- translate表示位置位移（可以水平，可以垂直），   android:interpolator="@android:anim/accelerate_interpolator"表示速度越来越快 , android:interpolator="@android:anim/decelerate_interpolator"表示速度越来越慢 -->
+    <translate
+        android:duration="800"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toYDelta="100%p" />
+
+    <alpha
+        android:duration="800"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>

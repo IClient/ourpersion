@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/nurseadmin_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="#cccccc"
+        android:visibility="gone"></TextView>
+
+    <ImageView
+        android:id="@+id/nurseadmin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jihua_line"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/one"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.example.administrator.OurPersion.SelfView.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/nurseadmin_number"
+    android:layout_marginLeft="20dp"
+        android:src="@mipmap/oldone" />
+
+    <TextView
+        android:id="@+id/nurseadmin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/image"
+        android:paddingLeft="20dp"
+        android:text="何奶奶" />
+
+    <TextView
+        android:id="@+id/nurseadmin_zubie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/nurseadmin_name"
+        android:paddingLeft="20dp"
+        android:text="张三组" />
+
+    <ImageView
+        android:id="@+id/nurseradmin_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment1_addicon_linearlayout"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="52dp"
+    android:background="@mipmap/dialog_background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/medialog_editmessage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/me_editmessage"
+        android:drawablePadding="12dp"
+        android:gravity="center_vertical"
+        android:text="编辑资料"
+        android:textColor="#e0000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/medialog_editimage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/me_setimage"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="设置头像"
+        android:textColor="#e0000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <!--<Button-->
+        <!--android:id="@+id/medialog_QRCode_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@null"-->
+        <!--android:drawableLeft="@mipmap/me_shaoyishao"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="扫一扫"-->
+        <!--android:textColor="#e0000000"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#cccccc" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/medialog_share_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="@null"-->
+        <!--android:drawableLeft="@mipmap/me_fenxiang"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="分 享"-->
+        <!--android:textColor="#e0000000"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#cccccc" />-->
+
+    <Button
+        android:id="@+id/medialog_exit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/me_exit"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:text="退出帐号"
+        android:textColor="#e0000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/medialog_updatepassword_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/me_editmessage"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:text="修改密码"
+        android:textColor="#e0000000"
+        android:textSize="16sp" />
+</LinearLayout>

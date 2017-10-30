@@ -1,0 +1,210 @@
+<com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oldmanexamination_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <include layout="@layout/main_menu"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/oldmanexamination_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:background="#1874CD">
+
+                <TextView
+                    android:id="@+id/oldmanexaminationback_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="37dp"
+                    android:drawableLeft="@mipmap/back"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="37dp"
+                    android:text="体征数据"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/oldmannexaminationdata_datepicker"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@null"
+                    android:src="@mipmap/research" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/oldmanexamination_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/oldmanexamination_title"
+                android:background="@mipmap/oldmanfamily_bk"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.example.administrator.OurPersion.SelfView.CircleImageView
+                    android:id="@+id/oldman_examination_image"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/oldone" />
+
+                <TextView
+                    android:id="@+id/oldman_examination_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/oldman_examination_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="男"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/oldmanexmination_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="亲!暂时还没数据哟.."
+                android:textColor="#cccccc" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/oldmanexamination_data_linechart"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_below="@id/oldmanexamination_layout"></com.github.mikephil.charting.charts.LineChart>
+
+            <LinearLayout
+                android:id="@+id/oldmanexaminationdata_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/oldmanexamination_data_linechart"
+                android:layout_marginTop="10dp"
+                android:background="#fafafa"
+                android:orientation="vertical">
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/shuzhangya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="舒张压" />
+
+                        <CheckBox
+                            android:id="@+id/shousuoya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩压" />
+
+                        <CheckBox
+                            android:id="@+id/maibo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="脉搏" />
+
+                        <CheckBox
+                            android:id="@+id/tiwen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="体温" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/huxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="呼吸" />
+
+                        <CheckBox
+                            android:id="@+id/tizhong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="体重" />
+
+                        <CheckBox
+                            android:id="@+id/zhushiliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主食量" />
+
+                        <CheckBox
+                            android:id="@+id/cailiang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="菜量" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/paibianliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="排便量" />
+
+                        <CheckBox
+                            android:id="@+id/pailiaoliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="排尿量" />
+
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.example.administrator.OurPersion.SelfView.MyHorizontalScrollView>

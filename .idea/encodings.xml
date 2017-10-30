@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/APP/libs/SMSSDK-3.0.0.aar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/APP/src/main/java/com/example/administrator/OurPersion/SelfView/PickerView.java" charset="UTF-8" />
+  </component>
+</project>
